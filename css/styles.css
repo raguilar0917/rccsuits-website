@@ -13,7 +13,7 @@
 html, body{
   padding: 0;
   margin: 0;
-  background: black;
+  background: white;
 }
 /*No-Select Class*/
 .noselect{
@@ -548,6 +548,129 @@ form{
 
 .Aligner{
   display: flex;
-  align-items:center;
+  align-items: center;
   justify-content: center;
+}
+
+#TigerAbout{
+  color: white;
+  position: absolute;
+  -webkit-transform: translate(0, -20px);
+  transform: translate(0, -20px);
+  font-family: "Maven";
+  font-size: 3vw;
+  font-weight: bold;
+  transition-duration: .36s;
+  text-align: center;
+  letter-spacing: 5px;
+  background: transparent;
+}
+
+#TigerDescritpion{
+  color: white;
+  position: relative;
+  right: 1px;
+  bottom:5px;
+  font-family: "Maven";
+  font-size: 3vw;
+  font-weight: bold;
+  transition-duration: .36s;
+  text-align: center;
+  letter-spacing: 5px;
+  background: transparent;
+}
+
+#containers{
+  display: flex;
+  justify-content: space-between; 
+}
+
+#container > div{
+  width:700px;
+  height: 300px;
+  background: linear-gradient(50deg, #788cff, #b4c8ff);
+}
+
+
+.grid-container{
+  grid-template-columns: auto auto auto;
+  display: grid;
+  grid-column-gap: 10px;
+  margin: 50px;
+}
+
+.grid-item{
+  opacity: .5;
+  border-radius: 10px;
+  font-size: auto;
+  background: #6A0DAD;
+  text-align: center;
+}
+
+table, th, td{
+  border: 1px solid black;
+}
+
+.conter {  
+  display: grid;  
+  grid-gap: 5px;  
+  grid-template-columns: repeat(auto-fit, 100px);
+  grid-template-rows: repeat(2, 100px); 
+}
+
+@import url('https://fonts.googleapis.com/css?family=Varela+Round');
+
+
+button.new {
+  width: 50%;
+  height: 10%;
+  position: absolute;
+  left: 50vw;
+  top: 40vh;
+  transform: translate(-50%,-80%);
+  font-family: 'Varela Round', sans-serif;
+  font-size: 3vw;
+  letter-spacing: 0.1em;
+  color: #e8e8e8;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  background: linear-gradient(45deg,#d350db,teal,#d350db);
+  background-size: 400% 400%;
+  box-shadow: 1vw 1vw 0 lightcoral;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  
+ 
+}
+ button.new:hover {
+    animation: gradient 10s ease infinite;
+    font-size: 2.05vw;
+    box-shadow: 0.2vw 0.2vw 0 lightcoral;
+  }
+@keyframes gradient {
+  50% {
+    background-position: 100% 0;
+  }
+}
+
+/* Mobile Styles */
+@media only screen and (max-width: 400px) {
+  body {
+    background-color:black; /* Red */
+  }
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+  body {
+    background-color: black; /* Yellow */
+  }
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+  body {
+    background-color: black; /* Blue */
+  }
 }
